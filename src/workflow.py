@@ -15,7 +15,7 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def save_json(filename, data):
-    """Save data into a JSON file."""
+    """Save data as JSON inside the project's data directory."""
     output_path = DATA_DIR / filename
 
     with open(output_path, "w", encoding="utf-8") as file:
@@ -25,28 +25,29 @@ def save_json(filename, data):
 
 
 def normalize_paper(paper, source):
-    """Convert papers from different sources to a common format."""
+    """Normalize paper metadata from arXiv and PubMed."""
+    paper = dict(paper)
     title = paper.get("title", "")
-    abstract = paper.get("abstract") or paper.get("summary", "")
+    abstract = paper.get("abstract") or paper.get("summary") or ""
 
-    normalized = dict(paper)
-    normalized["source"] = source
-    normalized["title"] = title
-    normalized["abstract"] = abstract
-    normalized["summary"] = abstract
+    paper["source"] = source
+    paper["title"] = title
+    paper["abstract"] = abstract
+    paper["summary"] = abstract
 
-    if not normalized.get("id"):
-        normalized["id"] = (
-            normalized.get("paper_id")
-            or normalized.get("url")
-            or title
+    if not paper.get("id"):
+        paper["id"] = (
+            paper.get("paper_id")
+            or paper.get("url")
+            or f"{source}_{title}"
         )
 
-    return normalized
+    return paper
 
 
 def literature_reviewer_agent(papers):
-    print("\n[step 2] Reviewing research papers")
+    """Review each fetched research paper."""
+    print("\n[step 4] Reviewing research papers")
 
     reviewed_papers = []
 
@@ -73,18 +74,14 @@ def literature_reviewer_agent(papers):
     return reviewed_papers
 
 
-def hypothesis_generator_agent(reviewed_papers, retrieved_context):
-    print("\n[step 4] Generating hypotheses")
+def hypothesis_generator_agent(reviewed_papers, retrieved_context=""):
+    """Generate hypotheses using paper reviews and retrieved context."""
+    print("\n[step 5] Generating hypotheses")
 
-    # Attach retrieved research context to each review.
-    contextualized_papers = []
-
-    for paper in reviewed_papers:
-        contextualized = dict(paper)
-        contextualized["retrieved_research_context"] = retrieved_context
-        contextualized_papers.append(contextualized)
-
-    hypotheses = generate_hypotheses(contextualized_papers)
+    hypotheses = generate_hypotheses(
+        reviewed_papers,
+        retrieved_context=retrieved_context,
+    )
 
     if not isinstance(hypotheses, list):
         hypotheses = [hypotheses]
@@ -94,7 +91,8 @@ def hypothesis_generator_agent(reviewed_papers, retrieved_context):
 
 
 def prepare_experiment_plans(hypotheses):
-    print("\n[step 5] Preparing experiment plans")
+    """Prepare experiment plans without executing generated code."""
+    print("\n[step 6] Preparing experiment plans")
 
     experiment_plans = []
 
@@ -106,14 +104,23 @@ def prepare_experiment_plans(hypotheses):
                 or hypothesis.get("title")
                 or str(hypothesis)
             )
+            experiment = hypothesis.get("experiment", "")
+            metrics = hypothesis.get("evaluation_metrics", [])
+            research_area = hypothesis.get("research_area", "general")
         else:
             description = str(hypothesis)
+            experiment = ""
+            metrics = []
+            research_area = "general"
 
         experiment_plans.append({
             "experiment_id": index,
+            "research_area": research_area,
             "hypothesis": description,
+            "experiment": experiment,
+            "evaluation_metrics": metrics,
             "execution_status": "not_executed",
-            "note": "Plan prepared; generated code was not executed.",
+            "note": "Plan prepared; no generated code was executed."
         })
 
     save_json("agent_experiment_plans.json", experiment_plans)
@@ -138,12 +145,10 @@ def run_workflow():
             query="machine learning",
             max_results=5,
         )
-
         pubmed_papers = fetch_pubmed_papers(
             query="machine learning",
             max_results=5,
         )
-
     except Exception as error:
         print(f"Paper fetching failed: {error}")
         return
@@ -152,7 +157,6 @@ def run_workflow():
         normalize_paper(paper, "arXiv")
         for paper in arxiv_papers
     ]
-
     pubmed_papers = [
         normalize_paper(paper, "PubMed")
         for paper in pubmed_papers
@@ -165,7 +169,7 @@ def run_workflow():
     print(f"Total papers collected: {len(papers)}")
 
     if not papers:
-        print("No research papers were found.")
+        print("No research papers were found. Workflow stopped.")
         return
 
     save_json("all_research_papers.json", papers)
@@ -185,22 +189,20 @@ def run_workflow():
             "machine learning research hypotheses",
             n_results=3,
         )
+        retrieved_context = retrieved_context or ""
     except Exception as error:
         print(f"Research retrieval failed: {error}")
-        return
-
-    if not retrieved_context:
         retrieved_context = ""
 
     reviewed_papers = literature_reviewer_agent(papers)
 
     if not reviewed_papers:
-        print("No papers could be reviewed.")
+        print("No papers could be reviewed. Workflow stopped.")
         return
 
     hypotheses = hypothesis_generator_agent(
         reviewed_papers,
-        retrieved_context,
+        retrieved_context=retrieved_context,
     )
 
     prepare_experiment_plans(hypotheses)
@@ -216,3 +218,4 @@ def run_workflow():
 
 if __name__ == "__main__":
     run_workflow()
+

@@ -5,11 +5,12 @@
         "evidence": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less.",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -18,11 +19,12 @@
         "evidence": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a sing",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -31,25 +33,27 @@
         "evidence": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
         "related_paper": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
-        "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
+        "hypothesis": "Training with imagined action outcomes may improve robot task success on previously unseen tasks.",
         "evidence": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to auto",
         "source": "",
         "research_area": "robotics",
-        "experiment": "Compare training with and without imagined action outcomes on held-out tasks, using the same evaluation conditions.",
+        "experiment": "Compare training with and without imagined action outcomes on held-out tasks.",
         "evaluation_metrics": [
             "task success rate",
             "generalization success rate",
-            "number of failed trials"
+            "failed trials"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -58,11 +62,12 @@
         "evidence": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -71,11 +76,12 @@
         "evidence": "Sexual dimorphism is a critical factor in many biological and medical research fields. In biomechanics and bioengineering, understanding sex differences is crucial for studying musculoskeletal conditions such as temporomandibular disorder. This paper focuses on the association between the craniofaci",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -84,11 +90,12 @@
         "evidence": "To map hard technologies for the prevention of pressure injuries in hospitalized adults and older adults. A scoping review following JBI methodology and PRISMA-ScR guidelines, searching the following databases: LILACS and BDENF (via VHL), MEDLINE, SCOPUS, CINAHL, and Embase. Gray literature was cons",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -97,11 +104,12 @@
         "evidence": "Real-time, ppm-to-ppb-level detection of hydrogen (H2) remains essential for industrial safety, given its flammability and widespread use in energy applications. Portable H2 sensors, however, continue to suffer from insufficient sensitivity and reliance on elevated operating temperatures. Here, cubi",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -110,11 +118,12 @@
         "evidence": "Molecular dynamics (MD) simulations are fundamentally limited by the timescale gap between rapid atomic fluctuations and slow, activated conformational transitions. While adaptive sampling accelerates the exploration of metastable states, conventional implementations often obscure the dynamical conn",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     },
     {
@@ -123,11 +132,12 @@
         "evidence": "Portable near-infrared (NIR) spectroscopy combined with interpretable machine learning was employed for the qualitative and quantitative analysis of polypropylene (PP), polyvinyl chloride (PVC), and polyethylene terephthalate (PET) in chicken. A total of 244 samples were prepared, including pure chi",
         "source": "",
         "research_area": "general",
-        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "experiment": "Compare the existing approach with a defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
             "task performance",
             "runtime"
         ],
+        "retrieved_context_available": true,
         "status": "preliminary_not_validated"
     }
 ]
