@@ -1,0 +1,77 @@
+[
+    {
+        "related_paper": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+        "hypothesis": "A compact surface representation can reduce memory usage while maintaining comparable novel-view rendering quality.",
+        "evidence": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for ef",
+        "source": "",
+        "research_area": "3d_rendering",
+        "experiment": "Compare the compact representation with a baseline on the same 3D scenes and rendering settings.",
+        "evaluation_metrics": [
+            "peak memory usage",
+            "PSNR",
+            "SSIM",
+            "LPIPS",
+            "rendering speed"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+        "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
+        "evidence": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning fro",
+        "source": "",
+        "research_area": "robotics",
+        "experiment": "Compare training with and without imagined action outcomes on held-out tasks, using the same evaluation conditions.",
+        "evaluation_metrics": [
+            "task success rate",
+            "generalization success rate",
+            "number of failed trials"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+        "hypothesis": "Explicit semantic validation combined with atomic transfer handling may reduce invalid token transfers and incomplete transactions across heterogeneous chains.",
+        "evidence": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus",
+        "source": "",
+        "research_area": "blockchain",
+        "experiment": "Test valid and invalid transfers, injected failures, and interrupted transactions against a baseline bridge.",
+        "evaluation_metrics": [
+            "semantic validation failure rate",
+            "incomplete transaction rate",
+            "transaction latency",
+            "recovery success rate"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "When Should We Intervene at Test Time?",
+        "hypothesis": "A selective test-time intervention policy based on input uncertainty or distribution shift may improve robustness while reducing harmful model updates.",
+        "evidence": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failu",
+        "source": "",
+        "research_area": "test_time_adaptation",
+        "experiment": "Compare selective intervention with always-adapt and never-adapt baselines across clean and corrupted evaluation batches.",
+        "evaluation_metrics": [
+            "accuracy",
+            "worst-group accuracy",
+            "harmful intervention rate",
+            "performance on clean data"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "hypothesis": "Learned attention gates may reduce prompt-injection attack success while preserving performance on legitimate tasks.",
+        "evidence": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted conten",
+        "source": "",
+        "research_area": "prompt_injection_security",
+        "experiment": "Compare the gated model with an ungated baseline on benign tasks and a controlled set of prompt-injection attacks.",
+        "evaluation_metrics": [
+            "attack success rate",
+            "benign task accuracy",
+            "false refusal rate",
+            "utility retention"
+        ],
+        "status": "preliminary_not_validated"
+    }
+]

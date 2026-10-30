@@ -1,0 +1,18 @@
+{
+  "experiment": "Lightweight image-processing prototype",
+  "dataset": "data\\datasets\\astronaut.png",
+  "image_dimensions": [
+    512,
+    512
+  ],
+  "baseline": "Original image (no processing)",
+  "method": "Gaussian blur, radius 1",
+  "evaluation": {
+    "baseline_processing_time_seconds": 0.000654499999654945,
+    "processed_time_seconds": 0.01232239999808371,
+    "psnr_db": 29.662621073424845,
+    "ssim": 0.9357138047654431,
+    "output_file": "results\\astronaut_blurred.png"
+  },
+  "status": "completed"
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+        "review": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for ef",
+        "link": ""
+    },
+    {
+        "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+        "review": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning fro",
+        "link": ""
+    },
+    {
+        "title": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+        "review": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus",
+        "link": ""
+    },
+    {
+        "title": "When Should We Intervene at Test Time?",
+        "review": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failu",
+        "link": ""
+    },
+    {
+        "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "review": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted conten",
+        "link": ""
+    }
+]

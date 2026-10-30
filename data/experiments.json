@@ -1,0 +1,82 @@
+[
+    {
+        "experiment_id": "EXP_001",
+        "related_paper": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+        "hypothesis": "A compact surface representation can reduce memory usage while maintaining comparable novel-view rendering quality.",
+        "objective": "Evaluate the hypothesis associated with: Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+        "experiment_design": "Compare the compact representation with a baseline on the same 3D scenes and rendering settings.",
+        "baseline": "Existing or standard approach",
+        "evaluation_metrics": [
+            "peak memory usage",
+            "PSNR",
+            "SSIM",
+            "LPIPS",
+            "rendering speed"
+        ],
+        "dataset": "To be selected and documented",
+        "status": "planned_not_executed"
+    },
+    {
+        "experiment_id": "EXP_002",
+        "related_paper": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+        "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
+        "objective": "Evaluate the hypothesis associated with: ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+        "experiment_design": "Compare training with and without imagined action outcomes on held-out tasks, using the same evaluation conditions.",
+        "baseline": "Existing or standard approach",
+        "evaluation_metrics": [
+            "task success rate",
+            "generalization success rate",
+            "number of failed trials"
+        ],
+        "dataset": "To be selected and documented",
+        "status": "planned_not_executed"
+    },
+    {
+        "experiment_id": "EXP_003",
+        "related_paper": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+        "hypothesis": "Explicit semantic validation combined with atomic transfer handling may reduce invalid token transfers and incomplete transactions across heterogeneous chains.",
+        "objective": "Evaluate the hypothesis associated with: An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+        "experiment_design": "Test valid and invalid transfers, injected failures, and interrupted transactions against a baseline bridge.",
+        "baseline": "Existing or standard approach",
+        "evaluation_metrics": [
+            "semantic validation failure rate",
+            "incomplete transaction rate",
+            "transaction latency",
+            "recovery success rate"
+        ],
+        "dataset": "To be selected and documented",
+        "status": "planned_not_executed"
+    },
+    {
+        "experiment_id": "EXP_004",
+        "related_paper": "When Should We Intervene at Test Time?",
+        "hypothesis": "A selective test-time intervention policy based on input uncertainty or distribution shift may improve robustness while reducing harmful model updates.",
+        "objective": "Evaluate the hypothesis associated with: When Should We Intervene at Test Time?",
+        "experiment_design": "Compare selective intervention with always-adapt and never-adapt baselines across clean and corrupted evaluation batches.",
+        "baseline": "Existing or standard approach",
+        "evaluation_metrics": [
+            "accuracy",
+            "worst-group accuracy",
+            "harmful intervention rate",
+            "performance on clean data"
+        ],
+        "dataset": "To be selected and documented",
+        "status": "planned_not_executed"
+    },
+    {
+        "experiment_id": "EXP_005",
+        "related_paper": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "hypothesis": "Learned attention gates may reduce prompt-injection attack success while preserving performance on legitimate tasks.",
+        "objective": "Evaluate the hypothesis associated with: Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "experiment_design": "Compare the gated model with an ungated baseline on benign tasks and a controlled set of prompt-injection attacks.",
+        "baseline": "Existing or standard approach",
+        "evaluation_metrics": [
+            "attack success rate",
+            "benign task accuracy",
+            "false refusal rate",
+            "utility retention"
+        ],
+        "dataset": "To be selected and documented",
+        "status": "planned_not_executed"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "experiment_id": "EXP_001",
+        "checks": {
+            "has_experiment_id": true,
+            "has_objective": true,
+            "has_design": true,
+            "has_metrics": true,
+            "dataset_selected": false
+        },
+        "ready_for_real_execution": false
+    },
+    {
+        "experiment_id": "EXP_002",
+        "checks": {
+            "has_experiment_id": true,
+            "has_objective": true,
+            "has_design": true,
+            "has_metrics": true,
+            "dataset_selected": false
+        },
+        "ready_for_real_execution": false
+    },
+    {
+        "experiment_id": "EXP_003",
+        "checks": {
+            "has_experiment_id": true,
+            "has_objective": true,
+            "has_design": true,
+            "has_metrics": true,
+            "dataset_selected": false
+        },
+        "ready_for_real_execution": false
+    },
+    {
+        "experiment_id": "EXP_004",
+        "checks": {
+            "has_experiment_id": true,
+            "has_objective": true,
+            "has_design": true,
+            "has_metrics": true,
+            "dataset_selected": false
+        },
+        "ready_for_real_execution": false
+    },
+    {
+        "experiment_id": "EXP_005",
+        "checks": {
+            "has_experiment_id": true,
+            "has_objective": true,
+            "has_design": true,
+            "has_metrics": true,
+            "dataset_selected": false
+        },
+        "ready_for_real_execution": false
+    }
+]
