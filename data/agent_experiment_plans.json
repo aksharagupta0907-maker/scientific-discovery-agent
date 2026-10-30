@@ -1,0 +1,62 @@
+[
+    {
+        "experiment_id": 1,
+        "hypothesis": "Test whether an alternative method for 'Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 2,
+        "hypothesis": "Test whether an alternative method for 'Rethinking Neural Thickets Without Weight Perturbations' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 3,
+        "hypothesis": "Test whether an alternative method for 'Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 4,
+        "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 5,
+        "hypothesis": "Test whether an alternative method for 'Adaptive Scenario Generation for KL-DRO Around a Learned Density Model' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 6,
+        "hypothesis": "Test whether an alternative method for 'Dimension reduction for characterizing sexual dimorphism in biomechanics of the temporomandibular joint.' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 7,
+        "hypothesis": "Test whether an alternative method for 'Hard technologies for prevention of pressure injuries in hospitalized adults and older adults: a scoping review.' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 8,
+        "hypothesis": "Test whether an alternative method for 'Machine Learning-Enabled ZnS/In2O3 Heterojunction Sensors for ppb-Level Room-Temperature Hydrogen Detection.' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 9,
+        "hypothesis": "Test whether an alternative method for 'TRAILS-MD: Mapping complex conformational landscapes and transition pathways via lightweight lineage-aware adaptive sampling.' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    },
+    {
+        "experiment_id": 10,
+        "hypothesis": "Test whether an alternative method for 'Qualitative and quantitative analysis of microplastics in chicken based on portable near-infrared spectroscopy and interpretable machine learning.' improves performance over the existing approach under controlled experimental conditions.",
+        "execution_status": "not_executed",
+        "note": "Plan prepared; generated code was not executed."
+    }
+]

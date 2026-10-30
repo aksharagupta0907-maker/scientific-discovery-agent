@@ -1,27 +1,52 @@
 [
     {
-        "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
-        "review": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for ef",
+        "title": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
+        "review": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less.",
         "link": ""
     },
     {
-        "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-        "review": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning fro",
+        "title": "Rethinking Neural Thickets Without Weight Perturbations",
+        "review": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a sing",
         "link": ""
     },
     {
-        "title": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
-        "review": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus",
+        "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+        "review": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl",
         "link": ""
     },
     {
-        "title": "When Should We Intervene at Test Time?",
-        "review": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failu",
+        "title": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
+        "review": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to auto",
         "link": ""
     },
     {
-        "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "review": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted conten",
+        "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+        "review": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution",
+        "link": ""
+    },
+    {
+        "title": "Dimension reduction for characterizing sexual dimorphism in biomechanics of the temporomandibular joint.",
+        "review": "Sexual dimorphism is a critical factor in many biological and medical research fields. In biomechanics and bioengineering, understanding sex differences is crucial for studying musculoskeletal conditions such as temporomandibular disorder. This paper focuses on the association between the craniofaci",
+        "link": ""
+    },
+    {
+        "title": "Hard technologies for prevention of pressure injuries in hospitalized adults and older adults: a scoping review.",
+        "review": "To map hard technologies for the prevention of pressure injuries in hospitalized adults and older adults. A scoping review following JBI methodology and PRISMA-ScR guidelines, searching the following databases: LILACS and BDENF (via VHL), MEDLINE, SCOPUS, CINAHL, and Embase. Gray literature was cons",
+        "link": ""
+    },
+    {
+        "title": "Machine Learning-Enabled ZnS/In2O3 Heterojunction Sensors for ppb-Level Room-Temperature Hydrogen Detection.",
+        "review": "Real-time, ppm-to-ppb-level detection of hydrogen (H2) remains essential for industrial safety, given its flammability and widespread use in energy applications. Portable H2 sensors, however, continue to suffer from insufficient sensitivity and reliance on elevated operating temperatures. Here, cubi",
+        "link": ""
+    },
+    {
+        "title": "TRAILS-MD: Mapping complex conformational landscapes and transition pathways via lightweight lineage-aware adaptive sampling.",
+        "review": "Molecular dynamics (MD) simulations are fundamentally limited by the timescale gap between rapid atomic fluctuations and slow, activated conformational transitions. While adaptive sampling accelerates the exploration of metastable states, conventional implementations often obscure the dynamical conn",
+        "link": ""
+    },
+    {
+        "title": "Qualitative and quantitative analysis of microplastics in chicken based on portable near-infrared spectroscopy and interpretable machine learning.",
+        "review": "Portable near-infrared (NIR) spectroscopy combined with interpretable machine learning was employed for the qualitative and quantitative analysis of polypropylene (PP), polyvinyl chloride (PVC), and polyethylene terephthalate (PET) in chicken. A total of 244 samples were prepared, including pure chi",
         "link": ""
     }
 ]

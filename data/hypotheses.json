@@ -1,24 +1,47 @@
 [
     {
-        "related_paper": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
-        "hypothesis": "A compact surface representation can reduce memory usage while maintaining comparable novel-view rendering quality.",
-        "evidence": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for ef",
+        "related_paper": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
+        "hypothesis": "Test whether an alternative method for 'Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less.",
         "source": "",
-        "research_area": "3d_rendering",
-        "experiment": "Compare the compact representation with a baseline on the same 3D scenes and rendering settings.",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
-            "peak memory usage",
-            "PSNR",
-            "SSIM",
-            "LPIPS",
-            "rendering speed"
+            "task performance",
+            "runtime"
         ],
         "status": "preliminary_not_validated"
     },
     {
-        "related_paper": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+        "related_paper": "Rethinking Neural Thickets Without Weight Perturbations",
+        "hypothesis": "Test whether an alternative method for 'Rethinking Neural Thickets Without Weight Perturbations' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a sing",
+        "source": "",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+        "hypothesis": "Test whether an alternative method for 'Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl",
+        "source": "",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
         "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
-        "evidence": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning fro",
+        "evidence": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to auto",
         "source": "",
         "research_area": "robotics",
         "experiment": "Compare training with and without imagined action outcomes on held-out tasks, using the same evaluation conditions.",
@@ -30,47 +53,80 @@
         "status": "preliminary_not_validated"
     },
     {
-        "related_paper": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
-        "hypothesis": "Explicit semantic validation combined with atomic transfer handling may reduce invalid token transfers and incomplete transactions across heterogeneous chains.",
-        "evidence": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus",
+        "related_paper": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+        "hypothesis": "Test whether an alternative method for 'Adaptive Scenario Generation for KL-DRO Around a Learned Density Model' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution",
         "source": "",
-        "research_area": "blockchain",
-        "experiment": "Test valid and invalid transfers, injected failures, and interrupted transactions against a baseline bridge.",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
-            "semantic validation failure rate",
-            "incomplete transaction rate",
-            "transaction latency",
-            "recovery success rate"
+            "task performance",
+            "runtime"
         ],
         "status": "preliminary_not_validated"
     },
     {
-        "related_paper": "When Should We Intervene at Test Time?",
-        "hypothesis": "A selective test-time intervention policy based on input uncertainty or distribution shift may improve robustness while reducing harmful model updates.",
-        "evidence": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failu",
+        "related_paper": "Dimension reduction for characterizing sexual dimorphism in biomechanics of the temporomandibular joint.",
+        "hypothesis": "Test whether an alternative method for 'Dimension reduction for characterizing sexual dimorphism in biomechanics of the temporomandibular joint.' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Sexual dimorphism is a critical factor in many biological and medical research fields. In biomechanics and bioengineering, understanding sex differences is crucial for studying musculoskeletal conditions such as temporomandibular disorder. This paper focuses on the association between the craniofaci",
         "source": "",
-        "research_area": "test_time_adaptation",
-        "experiment": "Compare selective intervention with always-adapt and never-adapt baselines across clean and corrupted evaluation batches.",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
-            "accuracy",
-            "worst-group accuracy",
-            "harmful intervention rate",
-            "performance on clean data"
+            "task performance",
+            "runtime"
         ],
         "status": "preliminary_not_validated"
     },
     {
-        "related_paper": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "hypothesis": "Learned attention gates may reduce prompt-injection attack success while preserving performance on legitimate tasks.",
-        "evidence": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted conten",
+        "related_paper": "Hard technologies for prevention of pressure injuries in hospitalized adults and older adults: a scoping review.",
+        "hypothesis": "Test whether an alternative method for 'Hard technologies for prevention of pressure injuries in hospitalized adults and older adults: a scoping review.' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "To map hard technologies for the prevention of pressure injuries in hospitalized adults and older adults. A scoping review following JBI methodology and PRISMA-ScR guidelines, searching the following databases: LILACS and BDENF (via VHL), MEDLINE, SCOPUS, CINAHL, and Embase. Gray literature was cons",
         "source": "",
-        "research_area": "prompt_injection_security",
-        "experiment": "Compare the gated model with an ungated baseline on benign tasks and a controlled set of prompt-injection attacks.",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
         "evaluation_metrics": [
-            "attack success rate",
-            "benign task accuracy",
-            "false refusal rate",
-            "utility retention"
+            "task performance",
+            "runtime"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "Machine Learning-Enabled ZnS/In2O3 Heterojunction Sensors for ppb-Level Room-Temperature Hydrogen Detection.",
+        "hypothesis": "Test whether an alternative method for 'Machine Learning-Enabled ZnS/In2O3 Heterojunction Sensors for ppb-Level Room-Temperature Hydrogen Detection.' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Real-time, ppm-to-ppb-level detection of hydrogen (H2) remains essential for industrial safety, given its flammability and widespread use in energy applications. Portable H2 sensors, however, continue to suffer from insufficient sensitivity and reliance on elevated operating temperatures. Here, cubi",
+        "source": "",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "TRAILS-MD: Mapping complex conformational landscapes and transition pathways via lightweight lineage-aware adaptive sampling.",
+        "hypothesis": "Test whether an alternative method for 'TRAILS-MD: Mapping complex conformational landscapes and transition pathways via lightweight lineage-aware adaptive sampling.' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Molecular dynamics (MD) simulations are fundamentally limited by the timescale gap between rapid atomic fluctuations and slow, activated conformational transitions. While adaptive sampling accelerates the exploration of metastable states, conventional implementations often obscure the dynamical conn",
+        "source": "",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "preliminary_not_validated"
+    },
+    {
+        "related_paper": "Qualitative and quantitative analysis of microplastics in chicken based on portable near-infrared spectroscopy and interpretable machine learning.",
+        "hypothesis": "Test whether an alternative method for 'Qualitative and quantitative analysis of microplastics in chicken based on portable near-infrared spectroscopy and interpretable machine learning.' improves performance over the existing approach under controlled experimental conditions.",
+        "evidence": "Portable near-infrared (NIR) spectroscopy combined with interpretable machine learning was employed for the qualitative and quantitative analysis of polypropylene (PP), polyvinyl chloride (PVC), and polyethylene terephthalate (PET) in chicken. A total of 244 samples were prepared, including pure chi",
+        "source": "",
+        "research_area": "general",
+        "experiment": "Compare the existing approach with a clearly defined alternative using the same dataset and experimental setup.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
         ],
         "status": "preliminary_not_validated"
     }
