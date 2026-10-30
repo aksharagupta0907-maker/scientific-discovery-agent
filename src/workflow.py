@@ -6,6 +6,7 @@ from arxiv_fetcher import fetch_arxiv_papers
 from pubmed_fetcher import fetch_pubmed_papers
 from agents.agents.literature_reviewer import review_paper
 from agents.agents.hypothesis_generator import generate_hypotheses
+from rag_store import build_rag_database, search_papers
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -72,10 +73,18 @@ def literature_reviewer_agent(papers):
     return reviewed_papers
 
 
-def hypothesis_generator_agent(reviewed_papers):
-    print("\n[step 3] Generating hypotheses")
+def hypothesis_generator_agent(reviewed_papers, retrieved_context):
+    print("\n[step 4] Generating hypotheses")
 
-    hypotheses = generate_hypotheses(reviewed_papers)
+    # Attach retrieved research context to each review.
+    contextualized_papers = []
+
+    for paper in reviewed_papers:
+        contextualized = dict(paper)
+        contextualized["retrieved_research_context"] = retrieved_context
+        contextualized_papers.append(contextualized)
+
+    hypotheses = generate_hypotheses(contextualized_papers)
 
     if not isinstance(hypotheses, list):
         hypotheses = [hypotheses]
@@ -84,8 +93,8 @@ def hypothesis_generator_agent(reviewed_papers):
     return hypotheses
 
 
-def code_executor_agent(hypotheses):
-    print("\n[step 4] Preparing experiment plans")
+def prepare_experiment_plans(hypotheses):
+    print("\n[step 5] Preparing experiment plans")
 
     experiment_plans = []
 
@@ -104,7 +113,7 @@ def code_executor_agent(hypotheses):
             "experiment_id": index,
             "hypothesis": description,
             "execution_status": "not_executed",
-            "note": "Plan prepared; generated code was not executed."
+            "note": "Plan prepared; generated code was not executed.",
         })
 
     save_json("agent_experiment_plans.json", experiment_plans)
@@ -127,12 +136,12 @@ def run_workflow():
     try:
         arxiv_papers = fetch_arxiv_papers(
             query="machine learning",
-            max_results=5
+            max_results=5,
         )
 
         pubmed_papers = fetch_pubmed_papers(
             query="machine learning",
-            max_results=5
+            max_results=5,
         )
 
     except Exception as error:
@@ -161,15 +170,40 @@ def run_workflow():
 
     save_json("all_research_papers.json", papers)
 
+    print("\n[step 2] Building/updating RAG database")
+
+    try:
+        build_rag_database()
+    except Exception as error:
+        print(f"RAG database update failed: {error}")
+        return
+
+    print("\n[step 3] Retrieving relevant research")
+
+    try:
+        retrieved_context = search_papers(
+            "machine learning research hypotheses",
+            n_results=3,
+        )
+    except Exception as error:
+        print(f"Research retrieval failed: {error}")
+        return
+
+    if not retrieved_context:
+        retrieved_context = ""
+
     reviewed_papers = literature_reviewer_agent(papers)
 
     if not reviewed_papers:
         print("No papers could be reviewed.")
         return
 
-    hypotheses = hypothesis_generator_agent(reviewed_papers)
+    hypotheses = hypothesis_generator_agent(
+        reviewed_papers,
+        retrieved_context,
+    )
 
-    code_executor_agent(hypotheses)
+    prepare_experiment_plans(hypotheses)
 
     print("\n====================================")
     print(" WORKFLOW COMPLETED")
