@@ -1,40 +1,49 @@
+
 # Autonomous Multimodal Scientific Discovery Agent
 
 ## Project Overview
-This project explores an automated scientific discovery workflow using Python. It includes literature review, hypothesis generation, experiment planning, validation, and a lightweight image-processing prototype.
+An AI-assisted scientific research automation system for collecting research papers, reviewing literature, generating hypotheses, and preparing experiment plans.
 
-## Technologies Used
+## Features
+- Research paper collection using arXiv and PubMed
+- Literature review
+- Hypothesis generation
+- Experiment planning
+- Docker sandbox testing
+- RL feedback evaluation
+- Automated research report generation
+
+## Technologies
 - Python
+- Machine Learning
+- NLP
+- Docker
 - Pillow
 - NumPy
-- scikit-image
-- JSON
+- Git and GitHub
 
-## Current Experiment
-- **Dataset:** Astronaut sample image
-- **Image Size:** 512 × 512
-- **Method:** Gaussian Blur (radius 1)
-- **PSNR:** 29.66 dB
-- **SSIM:** 0.9357
-- **Status:** Completed
+## Project Results
+- Research papers collected: 10
+- Papers reviewed: 10
+- Hypotheses generated: 10
+- Experiment plans: 10
+- Feedback evaluations: 10
+- Completed experiments: 0
+- Pending experiments: 10
 
-## Run the Experiment
-Activate your virtual environment and run:
+## How to Run
 
-```bash
-python src/agents/agents/image_experiment.py
+```powershell
+python .\src\workflow.py
+python .\src\rl_feedback_loop.py
+python .\src\final_report.py
 ```
 
-## Output Files
-- `results/astronaut_blurred.png`
-- `results/image_experiment_report.json`
-- `results/validation_report.json`
+## Final Report
+`reports/final_research_report.md`
 
-## Important Note
-The image-processing experiment is a lightweight prototype for testing the workflow. It does not reproduce or validate the original Honeycomb-Surfels research paper.
+## Current Status
+The research workflow, feedback evaluation, and report generation are working. Real experiment execution remains pending.
 
-## Future Improvements
-- Improve literature retrieval and review.
-- Generate evidence-based research hypotheses.
-- Connect experiments to suitable scientific datasets.
-- Add reproducible evaluation and result tracking.
+## Author
+Akshara Gupta
