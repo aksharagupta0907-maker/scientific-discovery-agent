@@ -1,27 +1,53 @@
+﻿
+import subprocess
 
-import ast
 
-
-def validate_python_code(code):
-    """Perform basic syntax validation before execution."""
+def execute_in_docker(code, timeout=30):
+    command = [
+        "docker",
+        "run",
+        "--rm",
+        "--network=none",
+        "--memory=256m",
+        "--cpus=0.5",
+        "--pids-limit=64",
+        "python:3.11-slim",
+        "python",
+        "-c",
+        code
+    ]
 
     try:
-        ast.parse(code)
-        return True, "Python syntax is valid."
-    except SyntaxError as error:
-        return False, f"Syntax error: {error}"
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            check=False
+        )
+
+        return {
+            "success": result.returncode == 0,
+            "stdout": result.stdout,
+            "stderr": result.stderr,
+            "return_code": result.returncode
+        }
+
+    except subprocess.TimeoutExpired:
+        return {
+            "success": False,
+            "stdout": "",
+            "stderr": "Experiment execution timed out.",
+            "return_code": None
+        }
 
 
-def prepare_experiment(code):
-    """
-    Validate experiment code without executing it.
-    Actual execution will be handled by the Docker sandbox.
-    """
+if __name__ == "__main__":
 
-    is_valid, message = validate_python_code(code)
+    test_code = """
+print("Hello from Docker Secure Sandbox!")
+print("2 + 3 =", 2 + 3)
+"""
 
-    return {
-        "valid": is_valid,
-        "message": message,
-        "code": code if is_valid else None
-    }
+    output = execute_in_docker(test_code)
+    print(output)

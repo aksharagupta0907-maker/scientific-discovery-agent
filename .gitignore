@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .env
 .vscode/
+chroma_db/
+data/chroma_db/
+*_backup*
+*before_repair*

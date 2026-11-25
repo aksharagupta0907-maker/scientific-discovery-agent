@@ -1,72 +1,123 @@
 [
     {
-        "experiment_id": "EXP_001",
-        "related_paper": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
-        "hypothesis": "A compact surface representation can reduce memory usage while maintaining comparable novel-view rendering quality.",
-        "evaluation_metrics": [
-            "peak memory usage",
-            "PSNR",
-            "SSIM",
-            "LPIPS",
-            "rendering speed"
-        ],
-        "status": "pending_execution",
-        "prepared_at": "2026-10-30T05:28:35.349661+00:00",
-        "result": null
-    },
-    {
-        "experiment_id": "EXP_002",
-        "related_paper": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-        "hypothesis": "Training with imagined action outcomes alongside available demonstrations may improve robot task success on previously unseen objects or environments.",
+        "experiment_id": 1,
+        "related_paper": "",
+        "hypothesis": "Training with imagined action outcomes may improve robot task success on previously unseen tasks.",
         "evaluation_metrics": [
             "task success rate",
             "generalization success rate",
-            "number of failed trials"
+            "failed trials"
         ],
         "status": "pending_execution",
-        "prepared_at": "2026-10-30T05:28:35.349677+00:00",
+        "prepared_at": "2026-11-25T17:21:17.824961+00:00",
         "result": null
     },
     {
-        "experiment_id": "EXP_003",
-        "related_paper": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
-        "hypothesis": "Explicit semantic validation combined with atomic transfer handling may reduce invalid token transfers and incomplete transactions across heterogeneous chains.",
+        "experiment_id": 2,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning' improves performance over the existing approach under controlled experimental conditions.",
         "evaluation_metrics": [
-            "semantic validation failure rate",
-            "incomplete transaction rate",
-            "transaction latency",
-            "recovery success rate"
+            "task performance",
+            "runtime"
         ],
         "status": "pending_execution",
-        "prepared_at": "2026-10-30T05:28:35.349681+00:00",
+        "prepared_at": "2026-11-25T17:21:17.824976+00:00",
         "result": null
     },
     {
-        "experiment_id": "EXP_004",
-        "related_paper": "When Should We Intervene at Test Time?",
-        "hypothesis": "A selective test-time intervention policy based on input uncertainty or distribution shift may improve robustness while reducing harmful model updates.",
+        "experiment_id": 3,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles' improves performance over the existing approach under controlled experimental conditions.",
         "evaluation_metrics": [
-            "accuracy",
-            "worst-group accuracy",
-            "harmful intervention rate",
-            "performance on clean data"
+            "task performance",
+            "runtime"
         ],
         "status": "pending_execution",
-        "prepared_at": "2026-10-30T05:28:35.349685+00:00",
+        "prepared_at": "2026-11-25T17:21:17.824996+00:00",
         "result": null
     },
     {
-        "experiment_id": "EXP_005",
-        "related_paper": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "hypothesis": "Learned attention gates may reduce prompt-injection attack success while preserving performance on legitimate tasks.",
+        "experiment_id": 4,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies' improves performance over the existing approach under controlled experimental conditions.",
         "evaluation_metrics": [
-            "attack success rate",
-            "benign task accuracy",
-            "false refusal rate",
-            "utility retention"
+            "task performance",
+            "runtime"
         ],
         "status": "pending_execution",
-        "prepared_at": "2026-10-30T05:28:35.349687+00:00",
+        "prepared_at": "2026-11-25T17:21:17.824998+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 5,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825000+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 6,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'Error Direction of Large Language Models on Medical Multiple-Response Questions: Opportunity-Standardized Benchmark Study.' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825002+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 7,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'Prediction Models for Frailty in People Living with HIV: Systematic Review.' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825004+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 8,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'Developing and Externally Validating Machine Learning Models to Forecast Short-Term Risk of Ventilator-Associated Pneumonia.' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825006+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 9,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'The Potential Role of Aflatoxin-B1 in Breast Cancer Pathogenesis: Mechanistic Insights.' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825008+00:00",
+        "result": null
+    },
+    {
+        "experiment_id": 10,
+        "related_paper": "",
+        "hypothesis": "Test whether an alternative method for 'Systematic Review of Algal Toxins in Seals and Sea Lions: Could Unexplained Caspian Seal Mortalities Be Related to Harmful Algae?' improves performance over the existing approach under controlled experimental conditions.",
+        "evaluation_metrics": [
+            "task performance",
+            "runtime"
+        ],
+        "status": "pending_execution",
+        "prepared_at": "2026-11-25T17:21:17.825010+00:00",
         "result": null
     }
 ]
